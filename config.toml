@@ -1,0 +1,61 @@
+baseURL = 'https://talbot.works/'
+languageCode = 'en-us'
+
+summaryLength = 5
+
+[params]
+title = "Ryan Talbot"
+author = "Ryan Talbot"
+profilePicture = "images/profile.jpg"
+description = """
+	The home of my various rants
+	and ramblins' usually within
+	the world of software dev.
+    """
+contentratio = 0.68
+displayMode = "dark"
+favicon = 'favicons/'
+
+[[params.socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://www.linkedin.com/in/ryantalbotie/"
+
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/RyanTalbot"
+
+[[params.socialIcons]]
+icon = "fab fa-twitter"
+title = "Twitter"
+url = "https://twitter.com/RyanTalbotIE"
+
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "Posts"
+  weight = 200
+  identifier = "posts"
+  url = "/posts/"
+
+  [[menu.main]]
+  name = "About"
+  weight = 300
+  identifier = "about"
+  url = "/about/"
+
+
+
+[module]
+  # uncomment line below for temporary local development of module
+  # replacements = "github.com/lxndrblz/anatole -> ../../anatole"
+  [[module.imports]]
+    path = "github.com/lxndrblz/anatole"
+    disable = false
